@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b1220;
+    color: #fff;
+}
+
+.topbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #0f172a;
+}
+
+.open { color: #22c55e; }
+
+.tabs {
+    display: flex;
+    background: #020617;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 12px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+}
+
+.tabs .active {
+    background: #22c55e;
+    color: #000;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.panel {
+    background: #020617;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #fff;
+}
+
+.stock {
+    padding: 10px;
+    border-bottom: 1px solid #1e293b;
+    cursor: pointer;
+}
+
+.stock.active, .stock:hover {
+    background: #052e1c;
+}
+
+.toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.toggle button {
+    flex: 1;
+    padding: 8px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #fff;
+}
+
+.toggle .active {
+    background: #22c55e;
+    color: #000;
+}
+
+.submit {
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    border: none;
+    font-weight: bold;
+}
